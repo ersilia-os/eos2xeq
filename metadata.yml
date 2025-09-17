@@ -7,9 +7,8 @@ Description: Predictive and generative efforts to discover antibiotics require p
   a study to find de novo antibiotics against N. gonorrhoeae or S. aureus, filters
   for dissimilarity to ca. 500 known antibiotics, as well as (retro)synthetic analysis
   combined with structural filtering, was applied to downselect compounds. Here, we
-  do not add the filters for activity and cytotoxicity, which were also part of the
-  original study. Cytotoxicity endpoints as used in the original publication can be
-  obtained from Ersilia's eos42ez.
+  do not add the filters for activity, cytotoxicity, and (retro)synthetic accessibility,
+  which were also part of the original study.
 Deployment:
 - Local
 Source: Local
@@ -21,17 +20,19 @@ Input:
 Input Dimension: 1
 Output:
 - Score
-Output Dimension: 1
+Output Dimension: 7
 Output Consistency: Fixed
-Interpretation: This model returns the similarity to known antibiotics (at 0.2 and 0.5 Tanimoto cutoff),
-  as well as the synthetic and retrosynthetic accessibility scores (SAS and RAS), the presence of a beta-lactam moiety,
-  and the presence of structural alerts (PAINS and Brenk).
+Interpretation: This model returns the similarity to known antibiotics (at 0.5 Tanimoto cutoff),
+  as as well as the presence of a antibiotic motif (nitrofuran, fluoroquinolone, carbapenem, betalactam),
+  and the presence of structural alerts (PAINS and Brenk). Note that the presence of motifs is done as recommended
+  by authors, using a simple substructure match, not based on more flexible SMARTS patterns.
 Tag:
 - Antimicrobial activity
 Biomedical Area:
 - Antimicrobial Resistance
 Target Organism:
-- Target Organism 1
+- Staphylococcus aureus
+- Neisseria gonorrhoeae
 Publication Type: Peer reviewed
 Publication Year: 2025
 Publication: https://www.cell.com/cell/abstract/S0092-8674(25)00855-4
