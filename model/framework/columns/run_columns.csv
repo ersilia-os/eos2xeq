@@ -1,1 +1,8 @@
 name,type,direction,description
+has_pains,integer,high,The molecule has PAINS alert matches
+has_brenk,integer,high,The molecule has Brenk filter alert matches
+is_sim_known_ab,integer,high,The molecule is similar to at least one of 500+ known antibiotics using a Tanimoto similarity of 0.5
+nitrofuran_motif,integer,high,The nitrofuran motif is found in the molecule using substructure matching
+fluoroquinolone_motif,integer,high,The fluoroquinolone motif is found in the molecule using substructure matching
+carbepenem_motif,integer,high,The carbepenem motif is found in the molecule using substructure matching
+betalactam_motif,integer,high,The beta-lactam motif is found in the molecule using substructure matching
