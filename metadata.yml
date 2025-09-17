@@ -22,10 +22,7 @@ Output:
 - Score
 Output Dimension: 7
 Output Consistency: Fixed
-Interpretation: This model returns the similarity to known antibiotics (at 0.5 Tanimoto cutoff),
-  as as well as the presence of a antibiotic motif (nitrofuran, fluoroquinolone, carbapenem, betalactam),
-  and the presence of structural alerts (PAINS and Brenk). Note that the presence of motifs is done as recommended
-  by authors, using a simple substructure match, not based on more flexible SMARTS patterns.
+Interpretation: This model returns the similarity to known antibiotics (at 0.5 Tanimoto cutoff), as as well as the presence of some antibiotic motifs.
 Tag:
 - Antimicrobial activity
 Biomedical Area:
