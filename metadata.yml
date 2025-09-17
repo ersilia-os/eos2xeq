@@ -29,7 +29,7 @@ Interpretation: This model returns the similarity to known antibiotics (at 0.5 T
 Tag:
 - Antimicrobial activity
 Biomedical Area:
-- Antimicrobial Resistance
+- Antimicrobial resistance
 Target Organism:
 - Staphylococcus aureus
 - Neisseria gonorrhoeae
