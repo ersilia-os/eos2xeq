@@ -1,6 +1,6 @@
 Identifier: eos2xeq
 Slug: antibiotics-downselection
-Status: In progress
+Status: Ready
 Title: Antibiotic downselection criteria based on similarity to known 
   antibiotics
 Description: Predictive and generative efforts to discover antibiotics require 
@@ -39,6 +39,18 @@ Publication: https://www.cell.com/cell/abstract/S0092-8674(25)00855-4
 Source Code: https://github.com/aartikrish/de-novo-antibiotics/
 License: MIT
 Incorporation Date: '2025-09-17'
+Last Packaging Date: '2025-09-18'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2xeq.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos2xeq
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 1.0
 Environment Size: 549.0
+Image Size: 495.75
+Computational Performance 1: 27.36
+Computational Performance 2: 18.89
+Computational Performance 3: 28.27
+Computational Performance 4: 106.77
+Computational Performance 5: 430.15
