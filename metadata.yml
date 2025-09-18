@@ -7,41 +7,30 @@ Description: Predictive and generative efforts to discover antibiotics require p
   a study to find de novo antibiotics against N. gonorrhoeae or S. aureus, filters
   for dissimilarity to ca. 500 known antibiotics, as well as (retro)synthetic analysis
   combined with structural filtering, was applied to downselect compounds. Here, we
-  do not add the filters for activity and cytotoxicity, which were also part of the
-  original study. Cytotoxicity endpoints as used in the original publication can be
-  obtained from Ersilia's eos42ez.
+  do not add the filters for activity, cytotoxicity, and (retro)synthetic accessibility,
+  which were also part of the original study.
 Deployment:
 - Local
-- Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization, Projection,
-  Similarity search, Generation
+Source: Local
+Source Type: External
+Task: Annotation
+Subtask: Property calculation or prediction
 Input:
 - Compound
 Input Dimension: 1
 Output:
-- Value
 - Score
-- Compound
-- Probability
-- Experimental value
-- '...'
-Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: 'The output of this template model should be interpreted like this.
-
-  '
+Output Dimension: 7
+Output Consistency: Fixed
+Interpretation: This model returns the similarity to known antibiotics (at 0.5 Tanimoto cutoff), as as well as the presence of some antibiotic motifs.
 Tag:
 - Antimicrobial activity
 Biomedical Area:
-- Biomedical Area 1
-- Biomedical Area 2
+- Antimicrobial resistance
 Target Organism:
-- Target Organism 1
-- Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
+- Staphylococcus aureus
+- Neisseria gonorrhoeae
+Publication Type: Peer reviewed
 Publication Year: 2025
 Publication: https://www.cell.com/cell/abstract/S0092-8674(25)00855-4
 Source Code: https://github.com/aartikrish/de-novo-antibiotics/
