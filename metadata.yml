@@ -1,37 +1,41 @@
 Identifier: eos2xeq
 Slug: antibiotics-downselection
 Status: In progress
-Title: Antibiotic downselection criteria based on similarity to known antibiotics
-Description: Predictive and generative efforts to discover antibiotics require post-filtering
-  of compounds to ensure novelty and synthetic accessibility of the molecules. In
-  a study to find de novo antibiotics against N. gonorrhoeae or S. aureus, filters
-  for dissimilarity to ca. 500 known antibiotics, as well as (retro)synthetic analysis
-  combined with structural filtering, was applied to downselect compounds. Here, we
-  do not add the filters for activity, cytotoxicity, and (retro)synthetic accessibility,
-  which were also part of the original study.
+Title: Antibiotic downselection criteria based on similarity to known 
+  antibiotics
+Description: Predictive and generative efforts to discover antibiotics require 
+  post-filtering of compounds to ensure novelty and synthetic accessibility of 
+  the molecules. In a study to find de novo antibiotics against N. gonorrhoeae 
+  or S. aureus, filters for dissimilarity to ca. 500 known antibiotics, as well 
+  as (retro)synthetic analysis combined with structural filtering, was applied 
+  to downselect compounds. Here, we do not add the filters for activity, 
+  cytotoxicity, and (retro)synthetic accessibility, which were also part of the 
+  original study.
 Deployment:
-- Local
+  - Local
 Source: Local
 Source Type: External
 Task: Annotation
 Subtask: Property calculation or prediction
 Input:
-- Compound
+  - Compound
 Input Dimension: 1
 Output:
-- Score
+  - Score
 Output Dimension: 7
 Output Consistency: Fixed
-Interpretation: This model returns the similarity to known antibiotics (at 0.5 Tanimoto cutoff), as as well as the presence of some antibiotic motifs.
+Interpretation: This model returns the similarity to known antibiotics (at 0.5 
+  Tanimoto cutoff), as as well as the presence of some antibiotic motifs.
 Tag:
-- Antimicrobial activity
+  - Antimicrobial activity
 Biomedical Area:
-- Antimicrobial resistance
+  - Antimicrobial resistance
 Target Organism:
-- Staphylococcus aureus
-- Neisseria gonorrhoeae
+  - Staphylococcus aureus
+  - Neisseria gonorrhoeae
 Publication Type: Peer reviewed
 Publication Year: 2025
 Publication: https://www.cell.com/cell/abstract/S0092-8674(25)00855-4
 Source Code: https://github.com/aartikrish/de-novo-antibiotics/
 License: MIT
+Incorporation Date: '2025-09-17'
