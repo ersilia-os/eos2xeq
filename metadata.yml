@@ -39,3 +39,6 @@ Publication: https://www.cell.com/cell/abstract/S0092-8674(25)00855-4
 Source Code: https://github.com/aartikrish/de-novo-antibiotics/
 License: MIT
 Incorporation Date: '2025-09-17'
+S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2xeq.zip
+Model Size: 1.0
+Environment Size: 549.0
