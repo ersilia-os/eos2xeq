@@ -93,12 +93,15 @@ uncharger = rdMolStandardize.Uncharger()
 def standardize(mol):
     if mol is None:
         return None
-    mol = rdMolStandardize.Cleanup(mol)           # disconnect metals, normalize nitro, etc.
-    mol = normalizer.normalize(mol)               # functional group normalization
-    mol = uncharger.uncharge(mol)                 # neutralize charges
-    mol = tautomer_enumerator.Canonicalize(mol)   # pick one tautomer
-    Chem.SanitizeMol(mol)
-    return mol
+    try:
+        mol = rdMolStandardize.Cleanup(mol)           # disconnect metals, normalize nitro, etc.
+        mol = normalizer.normalize(mol)               # functional group normalization
+        mol = uncharger.uncharge(mol)                 # neutralize charges
+        mol = tautomer_enumerator.Canonicalize(mol)   # pick one tautomer
+        Chem.SanitizeMol(mol)
+        return mol
+    except:
+        return mol
 
 mols = [standardize(mol) if standardize(mol) is not None else mol for mol in mols]
 
