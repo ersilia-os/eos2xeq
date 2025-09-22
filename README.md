@@ -2,7 +2,7 @@
 
 Predictive and generative efforts to discover antibiotics require post-filtering of compounds to ensure novelty and synthetic accessibility of the molecules. In a study to find de novo antibiotics against N. gonorrhoeae or S. aureus, filters for dissimilarity to ca. 500 known antibiotics, as well as (retro)synthetic analysis combined with structural filtering, was applied to downselect compounds. Here, we do not add the filters for activity, cytotoxicity, and (retro)synthetic accessibility, which were also part of the original study.
 
-This model was incorporated on 2025-09-17.Last packaged on 2025-09-18.
+This model was incorporated on 2025-09-17.Last packaged on 2025-09-22.
 
 ## Information
 ### Identifiers
@@ -47,12 +47,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `549`
-- **Image Size (Mb):** `495.75`
+- **Image Size (Mb):** `495.86`
 
 **Computational Performance (seconds):**
-- 10 inputs: `27.36`
-- 100 inputs: `28.27`
-- 10000 inputs: `430.15`
+- 10 inputs: `27.48`
+- 100 inputs: `28.29`
+- 10000 inputs: `426.97`
 
 ### References
 - **Source Code**: [https://github.com/aartikrish/de-novo-antibiotics/](https://github.com/aartikrish/de-novo-antibiotics/)
