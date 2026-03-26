@@ -39,18 +39,16 @@ Publication: https://www.cell.com/cell/abstract/S0092-8674(25)00855-4
 Source Code: https://github.com/aartikrish/de-novo-antibiotics/
 License: MIT
 Incorporation Date: '2025-09-17'
-Last Packaging Date: '2025-09-22'
+Last Packaging Date: '2026-03-26'
 Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2xeq.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos2xeq
-Docker Architecture:
-  - AMD64
-  - ARM64
+Docker Architecture: AMD64
 Model Size: 1.0
 Environment Size: 535.0
-Image Size: 495.86
-Computational Performance 1: 27.48
-Computational Performance 2: 19.1
-Computational Performance 3: 28.29
-Computational Performance 4: 106.15
-Computational Performance 5: 426.97
+Image Size: 501.08
+Computational Performance 1: 31.75
+Computational Performance 2: 24.28
+Computational Performance 3: 34.12
+Computational Performance 4: 80.14
+Computational Performance 5: 265.45
