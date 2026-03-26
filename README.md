@@ -2,7 +2,7 @@
 
 Predictive and generative efforts to discover antibiotics require post-filtering of compounds to ensure novelty and synthetic accessibility of the molecules. In a study to find de novo antibiotics against N. gonorrhoeae or S. aureus, filters for dissimilarity to ca. 500 known antibiotics, as well as (retro)synthetic analysis combined with structural filtering, was applied to downselect compounds. Here, we do not add the filters for activity, cytotoxicity, and (retro)synthetic accessibility, which were also part of the original study.
 
-This model was incorporated on 2025-09-17.Last packaged on 2025-09-22.
+This model was incorporated on 2025-09-17.Last packaged on 2026-03-26.
 
 ## Information
 ### Identifiers
@@ -41,18 +41,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos2xeq](https://hub.docker.com/r/ersiliaos/eos2xeq)
-- **Docker Architecture:** `AMD64`, `ARM64`
+- **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2xeq.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2xeq.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `535`
-- **Image Size (Mb):** `495.86`
+- **Image Size (Mb):** `501.08`
 
 **Computational Performance (seconds):**
-- 10 inputs: `27.48`
-- 100 inputs: `28.29`
-- 10000 inputs: `426.97`
+- 10 inputs: `31.75`
+- 100 inputs: `34.12`
+- 10000 inputs: `265.45`
 
 ### References
 - **Source Code**: [https://github.com/aartikrish/de-novo-antibiotics/](https://github.com/aartikrish/de-novo-antibiotics/)
