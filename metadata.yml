@@ -40,7 +40,7 @@ Source Code: https://github.com/aartikrish/de-novo-antibiotics/
 License: MIT
 Incorporation Date: '2025-09-17'
 Last Packaging Date: '2026-03-26'
-Release: v1.0.0
+Release: v1.0.1
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2xeq.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos2xeq
 Docker Architecture: AMD64
