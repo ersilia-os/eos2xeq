@@ -56,7 +56,7 @@ Below are the **Output Columns** of the model:
 
 ### References
 - **Source Code**: [https://github.com/aartikrish/de-novo-antibiotics/](https://github.com/aartikrish/de-novo-antibiotics/)
-- **Publication**: [https://www.cell.com/cell/abstract/S0092-8674(25)00855-4](https://www.cell.com/cell/abstract/S0092-8674(25)00855-4)
+- **Publication**: [https://doi.org/10.1016/j.cell.2025.07.033](https://doi.org/10.1016/j.cell.2025.07.033)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2025`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
