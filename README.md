@@ -1,6 +1,6 @@
 # Antibiotic downselection criteria based on similarity to known antibiotics
 
-Predictive and generative efforts to discover antibiotics require post-filtering of compounds to ensure novelty and synthetic accessibility of the molecules. In a study to find de novo antibiotics against N. gonorrhoeae or S. aureus, filters for dissimilarity to ca. 500 known antibiotics, as well as (retro)synthetic analysis combined with structural filtering, was applied to downselect compounds. Here, we do not add the filters for activity, cytotoxicity, and (retro)synthetic accessibility, which were also part of the original study.
+Applies seven structural filters used to triage candidate antibiotics, checking similarity to over 500 known antibacterial agents at a Tanimoto threshold of 0.5 alongside PAINS and Brenk alerts and specific motifs such as nitrofurans. Krishnan and colleagues used criteria of this kind to downselect output from generative antibiotic design, where the volume of proposals makes manual triage impractical. The flags are rule-based rather than learned, so they capture recognised liabilities and precedent, not predicted activity.
 
 This model was incorporated on 2025-09-17.Last packaged on 2026-03-26.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2025-09-17.Last packaged on 2026-03-26.
 ### Output
 - **Output Dimension:** `7`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** This model returns the similarity to known antibiotics (at 0.5 Tanimoto cutoff), as as well as the presence of some antibiotic motifs.
+- **Interpretation:** Binary flags for antibiotic similarity and structural alerts, where 1 means the criterion is met.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
@@ -62,7 +62,7 @@ Below are the **Output Columns** of the model:
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
 
 ### License
-This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [MIT](LICENSE) license.
+This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [Non-commercial](LICENSE) license.
 
 **Notice**: Ersilia grants access to models _as is_, directly from the original authors, please refer to the original code repository and/or publication if you use the model in your research.
 

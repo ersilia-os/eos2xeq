@@ -1,16 +1,8 @@
 Identifier: eos2xeq
 Slug: antibiotics-downselection
 Status: Ready
-Title: Antibiotic downselection criteria based on similarity to known 
-  antibiotics
-Description: Predictive and generative efforts to discover antibiotics require 
-  post-filtering of compounds to ensure novelty and synthetic accessibility of 
-  the molecules. In a study to find de novo antibiotics against N. gonorrhoeae 
-  or S. aureus, filters for dissimilarity to ca. 500 known antibiotics, as well 
-  as (retro)synthetic analysis combined with structural filtering, was applied 
-  to downselect compounds. Here, we do not add the filters for activity, 
-  cytotoxicity, and (retro)synthetic accessibility, which were also part of the 
-  original study.
+Title: Antibiotic downselection criteria based on similarity to known antibiotics
+Description: Applies seven structural filters used to triage candidate antibiotics, checking similarity to over 500 known antibacterial agents at a Tanimoto threshold of 0.5 alongside PAINS and Brenk alerts and specific motifs such as nitrofurans. Krishnan and colleagues used criteria of this kind to downselect output from generative antibiotic design, where the volume of proposals makes manual triage impractical. The flags are rule-based rather than learned, so they capture recognised liabilities and precedent, not predicted activity.
 Deployment:
   - Local
 Source: Local
@@ -24,8 +16,7 @@ Output:
   - Score
 Output Dimension: 7
 Output Consistency: Fixed
-Interpretation: This model returns the similarity to known antibiotics (at 0.5 
-  Tanimoto cutoff), as as well as the presence of some antibiotic motifs.
+Interpretation: Binary flags for antibiotic similarity and structural alerts, where 1 means the criterion is met.
 Tag:
   - Antimicrobial activity
 Biomedical Area:
@@ -37,7 +28,7 @@ Publication Type: Peer reviewed
 Publication Year: 2025
 Publication: https://doi.org/10.1016/j.cell.2025.07.033
 Source Code: https://github.com/aartikrish/de-novo-antibiotics/
-License: MIT
+License: Non-commercial
 Contributor: miquelduranfrigola
 Incorporation Date: '2025-09-17'
 Last Packaging Date: '2026-03-26'
@@ -53,4 +44,3 @@ Computational Performance 2: 24.28
 Computational Performance 3: 34.12
 Computational Performance 4: 80.14
 Computational Performance 5: 265.45
-Publication: https://doi.org/10.1016/j.cell.2025.07.033
