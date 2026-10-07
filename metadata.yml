@@ -47,7 +47,7 @@ S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2xeq.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos2xeq
 Docker Architecture: AMD64
 Model Size: 1.0
-Environment Size: 535.0
+Environment Size: 539.0
 Image Size: 501.08
 Computational Performance 1: 31.75
 Computational Performance 2: 24.28
