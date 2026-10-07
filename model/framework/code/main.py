@@ -103,6 +103,9 @@ EMPTY_ROW = [""] * 7
 
 outputs = []
 for s in smiles_list:
+    if get_mol_from_smiles(s) is None:
+        outputs.append(EMPTY_ROW)
+        continue
     try:
         pains = check_pains(s)
         brenk = check_brenk(s)
