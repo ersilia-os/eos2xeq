@@ -1,6 +1,6 @@
 # Antibiotic downselection criteria based on similarity to known antibiotics
 
-Applies seven structural filters used to triage candidate antibiotics, checking similarity to over 500 known antibacterial agents at a Tanimoto threshold of 0.5 alongside PAINS and Brenk alerts and specific motifs such as nitrofurans. Krishnan and colleagues used criteria of this kind to downselect output from generative antibiotic design, where the volume of proposals makes manual triage impractical. The flags are rule-based rather than learned, so they capture recognised liabilities and precedent, not predicted activity.
+Applies seven structural checks used to triage candidate antibiotics, flagging PAINS and Brenk alerts, Morgan-fingerprint Tanimoto similarity of 0.5 or more to a curated set of 559 known antibacterials, and nitrofuran, fluoroquinolone, carbapenem and beta-lactam motifs. Krishnan and colleagues applied them when searching for de novo antibiotics against Neisseria gonorrhoeae and Staphylococcus aureus, keeping compounds below the similarity cut-off. The activity, cytotoxicity and synthetic accessibility filters of that study are not reproduced here.
 
 This model was incorporated on 2025-09-17.Last packaged on 2026-03-26.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2025-09-17.Last packaged on 2026-03-26.
 ### Output
 - **Output Dimension:** `7`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Binary flags for antibiotic similarity and structural alerts, where 1 means the criterion is met.
+- **Interpretation:** Seven binary flags, 1 meaning a match, covering structural alerts, antibiotic motifs and 0.5 Tanimoto similarity to 559 known antibacterials.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
