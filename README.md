@@ -2,7 +2,7 @@
 
 Applies seven structural checks used to triage candidate antibiotics, flagging PAINS and Brenk alerts, Morgan-fingerprint Tanimoto similarity of 0.5 or more to a curated set of 559 known antibacterials, and nitrofuran, fluoroquinolone, carbapenem and beta-lactam motifs. Krishnan and colleagues applied them when searching for de novo antibiotics against Neisseria gonorrhoeae and Staphylococcus aureus, keeping compounds below the similarity cut-off. The activity, cytotoxicity and synthetic accessibility filters of that study are not reproduced here.
 
-This model was incorporated on 2025-09-17.Last packaged on 2026-03-26.
+This model was incorporated on 2025-09-17.Last packaged on 2026-10-07.
 
 ## Information
 ### Identifiers
@@ -41,18 +41,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos2xeq](https://hub.docker.com/r/ersiliaos/eos2xeq)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2xeq.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2xeq.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
-- **Environment Size (Mb):** `535`
-- **Image Size (Mb):** `501.08`
+- **Environment Size (Mb):** `539`
+- **Image Size (Mb):** `514.95`
 
 **Computational Performance (seconds):**
-- 10 inputs: `31.75`
-- 100 inputs: `34.12`
-- 10000 inputs: `265.45`
+- 10 inputs: `28.6`
+- 100 inputs: `21.57`
+- 10000 inputs: `224.69`
 
 ### References
 - **Source Code**: [https://github.com/aartikrish/de-novo-antibiotics/](https://github.com/aartikrish/de-novo-antibiotics/)
