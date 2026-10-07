@@ -1,14 +1,16 @@
 Identifier: eos2xeq
 Slug: antibiotics-downselection
 Status: Ready
-Title: Antibiotic downselection criteria based on similarity to known antibiotics
-Description: Applies seven structural checks used to triage candidate antibiotics,
-  flagging PAINS and Brenk alerts, Morgan-fingerprint Tanimoto similarity of 0.5 or
-  more to a curated set of 559 known antibacterials, and nitrofuran, fluoroquinolone,
-  carbapenem and beta-lactam motifs. Krishnan and colleagues applied them when searching
-  for de novo antibiotics against Neisseria gonorrhoeae and Staphylococcus aureus,
-  keeping compounds below the similarity cut-off. The activity, cytotoxicity and synthetic
-  accessibility filters of that study are not reproduced here.
+Title: Antibiotic downselection criteria based on similarity to known 
+  antibiotics
+Description: Applies seven structural checks used to triage candidate 
+  antibiotics, flagging PAINS and Brenk alerts, Morgan-fingerprint Tanimoto 
+  similarity of 0.5 or more to a curated set of 559 known antibacterials, and 
+  nitrofuran, fluoroquinolone, carbapenem and beta-lactam motifs. Krishnan and 
+  colleagues applied them when searching for de novo antibiotics against 
+  Neisseria gonorrhoeae and Staphylococcus aureus, keeping compounds below the 
+  similarity cut-off. The activity, cytotoxicity and synthetic accessibility 
+  filters of that study are not reproduced here.
 Deployment:
   - Local
 Source: Local
@@ -22,8 +24,9 @@ Output:
   - Score
 Output Dimension: 7
 Output Consistency: Fixed
-Interpretation: Seven binary flags, 1 meaning a match, covering structural alerts,
-  antibiotic motifs and 0.5 Tanimoto similarity to 559 known antibacterials.
+Interpretation: Seven binary flags, 1 meaning a match, covering structural 
+  alerts, antibiotic motifs and 0.5 Tanimoto similarity to 559 known 
+  antibacterials.
 Tag:
   - Antimicrobial activity
 Biomedical Area:
